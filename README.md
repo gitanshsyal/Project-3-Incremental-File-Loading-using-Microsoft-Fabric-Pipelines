@@ -47,7 +47,7 @@ Inserts successfully processed file names into file_tracker with load time.
 
 INSERT INTO file_tracker (fileName, load_time)
 VALUES ('@{item().name}', GETUTCDATE());
-Technologies Used
+
 ---------------------------------------------------------------------------------------------------------------
 # Technologies Used
 Microsoft Fabric Pipelines
