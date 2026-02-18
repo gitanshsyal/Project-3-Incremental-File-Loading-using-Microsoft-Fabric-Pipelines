@@ -27,10 +27,7 @@ SELECT fileName FROM file_tracker;
 
 Filters out files that already exist in the tracking table.
 
-@not(contains(
-  activity('Lookup1').output.value[*].fileName,
-  item().name
-))
+@not(contains(string(activity('Lookup1').output.value),item().name))
 
 
 4. ForEach Activity
